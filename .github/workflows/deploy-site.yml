@@ -1,58 +1,83 @@
-name: Deploy to GitHub Pages
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
+name: Deploy site
 
 on:
-  push:
-    branches: [default]
-  workflow_dispatch:
+    push:
+        branches:
+            - "default"
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+    contents: read
+    pages: write
+    id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+    group: pages
+    cancel-in-progress: true
+
+defaults:
+    run:
+        shell: pwsh
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-          
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-          cache: 'npm'
-          cache-dependency-path: docs/package-lock.json
+    build-site:
+        name: "Build site"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-        
-      - name: Install dependencies
-        working-directory: docs/
-        run: npm ci
-        
-      - name: Build VitePress site
-        working-directory: docs/
-        run: npm run docs:build
+        strategy:
+            matrix:
+                system:
+                    - ubuntu-24.04
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: docs/public/
+        runs-on: ${{ matrix.system }}
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v7
+              with:
+                  fetch-depth: 0
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v7
+              with:
+                  node-version: "22"
+                  cache: "npm"
+                  cache-dependency-path: package-lock.json
+
+            - name: Configure GitHub Pages
+              uses: actions/configure-pages@v6
+
+            - name: Install dependencies
+              run: |
+                  npm ci
+
+            - name: Build site
+              run: |
+                  npm run docs:build
+
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v5
+              with:
+                  path: ${{ github.workspace }}/public/
+
+    deploy-site:
+        name: "Deploy site"
+
+        needs:
+            - build-site
+
+        strategy:
+            matrix:
+                system:
+                    - ubuntu-24.04
+
+        runs-on: ${{ matrix.system }}
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        steps:
+            - name: Deploy landing
+              id: deployment
+              uses: actions/deploy-pages@v5
