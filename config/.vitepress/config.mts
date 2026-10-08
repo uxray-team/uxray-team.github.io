@@ -8,7 +8,7 @@ export default defineConfig({
   title: "IX-Ray Platform", //Название в шапке
   description: "Официальная страница проекта IX-Ray Platform\nhttps://github.com/ixray-team/ixray-1.6-stcop",
 
-  base: '/ixray-1.6-stcop/',
+  base: '/',
   srcDir: "../docs",
   outDir: '../public',
   lastUpdated: true,
@@ -21,7 +21,7 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/ixray-1.6-stcop/favicon.ico' }] 
+    ['link', { rel: 'icon', href: '/favicon.ico' }] 
   ],
 
   locales: {
