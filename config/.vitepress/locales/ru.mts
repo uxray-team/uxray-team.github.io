@@ -8,11 +8,6 @@ const nav: DefaultTheme.NavItem[] = [
   { text: 'Документация', link: '/main/getting-started' },
 ]
 
-const navWithMods: DefaultTheme.NavItem[] = [
-  ...nav,
-  { text: 'Модификации', link: '/mods/released/mods' },
-]
-
 const devModsSidebar = modsSidebar
 const sidebar = mainSidebar
 
@@ -33,7 +28,7 @@ export const ruLocale = {
       linkText: 'Вернуться домой',
     },
     editLink: {
-      pattern: 'https://github.com/ixray-team/ixray-1.6-stcop/edit/default/docs/:path',
+      pattern: 'https://github.com/uxray-team/uxray-team.github.io/edit/default/docs/:path',
       text: 'Редактировать страницу',
     },
     lastUpdated: {
@@ -41,7 +36,7 @@ export const ruLocale = {
     },
     footer: {
       message: 'Опубликовано под лицензией MIT.',
-      copyright: '© 2025 ixray-team / IX-Ray Platform',
+      copyright: '© Ultimate X-Ray Team, 2026',
     },
     darkModeSwitchLabel: 'Тема',
     lightModeSwitchTitle: 'Переключить на светлую тему',
@@ -75,7 +70,7 @@ export const ruLocale = {
         },
       },
     },
-    nav: navWithMods,
+    nav: nav,
     sidebar: {
       '/mods/': devModsSidebar,
       '/': sidebar,

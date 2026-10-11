@@ -8,11 +8,6 @@ const nav: DefaultTheme.NavItem[] = [
   { text: 'Documentation', link: '/en/main/getting-started' },
 ]
 
-const navWithDevExamples: DefaultTheme.NavItem[] = [
-  ...nav,
-  { text: 'Modifications', link: '/en/mods/released/mods' },
-]
-
 export const enLocale = {
   label: 'English',
   lang: 'en',
@@ -32,7 +27,7 @@ export const enLocale = {
       linkText: 'Take me home'
     },
     editLink: {
-      pattern: 'https://github.com/ixray-team/ixray-1.6-stcop/edit/default/docs/:path',
+      pattern: 'https://github.com/uxray-team/uxray-team.github.io/edit/default/docs/:path',
       text: 'Edit page'
     },
     lastUpdated: {
@@ -40,7 +35,7 @@ export const enLocale = {
     },
     footer: {
       message: 'Published under the MIT license.',
-      copyright: '© 2025 ixray-team / IX-Ray Platform'
+      copyright: '© Ultimate X-Ray Team, 2026'
     },
     darkModeSwitchLabel: 'Appearance',
     lightModeSwitchTitle: 'Switch to light theme',
@@ -49,7 +44,7 @@ export const enLocale = {
     returnToTopLabel: 'Back to top',
     langMenuLabel: 'Change language',
     skipToContentLabel: 'Skip to content',
-    nav: navWithDevExamples,
+    nav: nav,
     sidebar: {
       '/en/mods/': modsSidebar,
       '/en/': mainSidebar,

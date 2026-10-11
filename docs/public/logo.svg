@@ -1,8 +1,63 @@
-<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M250.823 863.968L292.933 791.416H706.487L748.597 863.968H250.823Z" fill="black"/>
-<path d="M450.655 249.251V249.24H548L548.636 249.298L549.5 250.5L729.368 523.097L730.322 524.112L654.203 639.442L654.495 639L654.167 639.489H345.088V639.407L269.116 524.299L450.655 249.251ZM655.69 524.322L522.022 321.792H477.288L343.629 524.299L371.767 566.937H627.562L655.69 524.322Z" fill="black"/>
-<path d="M844.522 523.004L845.5 524L695.35 751.728H304.079L153.852 524.112L154.898 523.004L409 137.023H409.656V137.012H589.773V137.023H590.5L844.522 523.004ZM228.502 524.345L330.694 679.176H668.735L770.927 524.345L563.159 209.552H436.261L228.502 524.345Z" fill="black"/>
-<path d="M370.987 137L115.494 524.112H41L296.483 137H370.987Z" fill="black"/>
-<path d="M702.937 137L958.42 524.112H883.925L628.433 137H702.937Z" fill="black"/>
-<path d="M393.188 527.249L498.829 361.479L606.232 527.249H393.188Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="Logo filled, no background alt.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:export-filename="Logo filled, with background.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.57629203"
+     inkscape:cx="766.97226"
+     inkscape:cy="639.43275"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <g
+     id="g11"
+     transform="matrix(-1.0180152,0,0,-1.0084628,1011.6953,991.07766)"
+     style="fill:#000000;fill-opacity:1">
+    <path
+       d="M 109.71871,883.5999 176.19837,769.06102 H 829.08196 L 895.56161,883.5999 Z"
+       fill="#ffffff"
+       id="path1"
+       style="stroke-width:1.57871;fill:#000000;fill-opacity:1" />
+    <path
+       d="m 189.55491,702.00119 53.55341,-114.53888 h 525.93741 l 53.55341,114.53888 z"
+       fill="#ffffff"
+       id="path1-8"
+       style="stroke-width:1.41695;fill:#000000;fill-opacity:1" />
+    <path
+       d="m 265.0714,527.77119 41.21734,-91.29401 h 404.7873 l 41.21735,91.29401 z"
+       fill="#ffffff"
+       id="path1-8-5"
+       style="stroke-width:1.1098;fill:#000000;fill-opacity:1" />
+    <path
+       d="M 334.47236,352.01682 501.24932,90.313356 670.80796,352.01682 Z"
+       fill="#ffffff"
+       id="path6"
+       style="stroke-width:1.57871;fill:#000000;fill-opacity:1" />
+  </g>
 </svg>

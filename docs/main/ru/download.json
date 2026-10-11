@@ -1,9 +1,9 @@
 {
-  "badgeLabel": "IX-Ray Platform • Скачать",
+  "badgeLabel": "Ultimate X-Ray • Скачать",
   "branchLabel": "Стабильный · {version}",
   "hero": {
-    "title": "Скачивание платформы <span>IX-Ray {version}</span>",
-    "description": "Modernized X-Ray based on X-Ray 1.6.02<br>Последний релиз: {date}"
+    "title": "Скачивание платформы <span>Ultimate X-Ray {version}</span>",
+    "description": "Более стабильный форк движка IX-Ray<br>Последний релиз: {date}"
   },
   "labels": {
     "production": "Production ready",
@@ -13,7 +13,7 @@
   "fallback": {
     "version": "—",
     "date": "—",
-    "releasePage": "https://github.com/ixray-team/ixray-1.6-stcop/releases"
+    "releasePage": "https://github.com/uxray-team/ultimate-xray/releases"
   },
   "cards": {
     "main": {

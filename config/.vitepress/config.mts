@@ -5,8 +5,8 @@ import { ruLocale } from './locales/ru.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "IX-Ray Platform", //Название в шапке
-  description: "Официальная страница проекта IX-Ray Platform\nhttps://github.com/ixray-team/ixray-1.6-stcop",
+  title: "Ultimate X-Ray", // Название в шапке
+  description: "Официальная страница проекта Ultimate X-Ray\nhttps://github.com/uxray-team/ultimate-xray",
 
   base: '/',
   srcDir: "../docs",
@@ -42,9 +42,8 @@ export default defineConfig({
       options: {}
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ixray-team/ixray-1.6-stcop' },
-      { icon: 'discord', link: 'https://discord.gg/hWTbHxaYWz' },
-      { icon: 'telegram', link: 'https://t.me/ixray_platform' },
+      { icon: 'github', link: 'https://github.com/uxray-team/ultimate-xray' },
+      { icon: 'discord', link: 'https://discord.gg/9V3rCeMw7y' },
     ]
   }
 })

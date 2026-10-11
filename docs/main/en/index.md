@@ -3,26 +3,18 @@
 layout: home
 
 hero:
-  name: "IX-Ray Platform"
-  #text: "IX-Ray is a fork of X-Ray Engine 1.6, aimed at improving gameplay and developer experience, fixing original bugs and expanding capabilities for modmakers."
-  tagline: IX-Ray is a fork of X-Ray Engine 1.6, aimed at improving gameplay and developer experience, fixing original bugs and expanding capabilities for modmakers.
+  name: "Ultimate X-Ray"
+  tagline: Ultimate X-Ray is a fork of IX-Ray Engine, aimed at improving gameplay and developer experience, fixing original bugs and stability issues.
   actions:
     - theme: brand
       text: Documentation
       link: /en/main/getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/ixray-team/ixray-1.6-stcop
+      link: https://github.com/uxray-team/ultimate-xray
     - theme: alt
       text: Discord
-      link: https://discord.gg/hWTbHxaYWz
-    - theme: alt
-      text: Telegram
-      link: https://t.me/ixray_platform
-
-heroVideo:
-  url: https://www.youtube.com/watch?v=XPe_rKGrO6Y
-  title: IX-Ray Platform Overview
+      link: https://discord.gg/9V3rCeMw7y
 
 features:
   - title: Code Quality
@@ -30,11 +22,5 @@ features:
   - title: SDK
     details: Complete set of tools
   - title: Platforms
-    details: Extended support for multiplayer, CoC, OMP and Clear Sky
+    details: Support for Clear Sky, Shadow of Chernobyl, and some multiplayer fixes
 ---
-
-<script setup>
-import VkArticleWidget from '../../../components/VkArticleWidget.vue';
-</script>
-
-<VkArticleWidget />

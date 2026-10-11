@@ -25,7 +25,7 @@ interface GithubRelease {
   assets?: GithubAsset[]
 }
 
-const repoSlug = 'ixray-team/ixray-1.6-stcop'
+const repoSlug = 'uxray-team/ultimate-xray'
 const apiUrl = `https://api.github.com/repos/${repoSlug}/releases/latest`
 
 const { lang } = useData()
