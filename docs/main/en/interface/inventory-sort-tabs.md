@@ -15,7 +15,7 @@ Hotkeys `kQ`/`kE` are also supported.
 
 In `configs/mod_system_ixray.ltx` or your mod LTX:
 
-```ltx
+```ini
 [inventory_sort]
 system = categories   ; categories | ordering
 ```
@@ -76,7 +76,7 @@ Weight / condition / cost / novelty captions append `v` (descending) or `^` (asc
 
 ### LTX for ordering
 
-```ltx
+```ini
 [inventory_sort]
 system = ordering
 

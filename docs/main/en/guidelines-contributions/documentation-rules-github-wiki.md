@@ -47,7 +47,7 @@ Add when applicable.
 
 ### Scenario 1: [Title]
 
-```lang
+```ini
 [example code]
 ```
 
@@ -55,7 +55,7 @@ Add when applicable.
 
 ### Scenario 2: [Title]
 
-```lang
+```ini
 [example code]
 ```
 

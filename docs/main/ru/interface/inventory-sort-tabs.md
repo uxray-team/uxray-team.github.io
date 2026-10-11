@@ -15,7 +15,7 @@
 
 В `configs/mod_system_ixray.ltx` или своем mod LTX:
 
-```ltx
+```ini
 [inventory_sort]
 system = categories   ; categories | ordering
 ```
@@ -76,7 +76,7 @@ system = categories   ; categories | ordering
 
 ### LTX для ordering
 
-```ltx
+```ini
 [inventory_sort]
 system = ordering
 
