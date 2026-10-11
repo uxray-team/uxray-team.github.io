@@ -16,8 +16,6 @@ export default defineConfig({
   rewrites: {
     'main/ru/:rest*': ':rest*',
     'main/en/:rest*': 'en/:rest*',
-    'mods/ru/:rest*': 'mods/:rest*',
-    'mods/en/:rest*': 'en/mods/:rest*',
   },
 
   head: [

@@ -1,6 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
 import { mainSidebar } from './en/main_sidebar.mts'
-import { modsSidebar } from './en/mods_sidebar.mts'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: 'Home', link: '/en/' },
@@ -46,7 +45,6 @@ export const enLocale = {
     skipToContentLabel: 'Skip to content',
     nav: nav,
     sidebar: {
-      '/en/mods/': modsSidebar,
       '/en/': mainSidebar,
     },
   },

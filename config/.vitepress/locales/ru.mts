@@ -1,6 +1,5 @@
 import type { DefaultTheme } from 'vitepress'
 import { mainSidebar } from './ru/main_sidebar.mts'
-import { modsSidebar } from './ru/mods_sidebar.mts'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: 'Главная', link: '/' },
@@ -8,7 +7,6 @@ const nav: DefaultTheme.NavItem[] = [
   { text: 'Документация', link: '/main/getting-started' },
 ]
 
-const devModsSidebar = modsSidebar
 const sidebar = mainSidebar
 
 export const ruLocale = {
@@ -72,7 +70,6 @@ export const ruLocale = {
     },
     nav: nav,
     sidebar: {
-      '/mods/': devModsSidebar,
       '/': sidebar,
     },
   },
